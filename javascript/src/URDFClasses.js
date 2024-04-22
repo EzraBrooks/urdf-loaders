@@ -255,11 +255,11 @@ class URDFJoint extends URDFBase {
                 this.jointValue[2] = values[2] !== null ? values[2] : this.jointValue[2];
                 this.position.copy(this.origPosition);
                 // Respect origin RPY when setting position
-                _tempAxis.set(1, 0, 0).applyEuler(this.rotation);
+                _tempAxis.set(1, 0, 0);
                 this.position.addScaledVector(_tempAxis, this.jointValue[0]);
-                _tempAxis.set(0, 1, 0).applyEuler(this.rotation);
+                _tempAxis.set(0, 1, 0);
                 this.position.addScaledVector(_tempAxis, this.jointValue[1]);
-                _tempAxis.set(0, 0, 1).applyEuler(this.rotation);
+                _tempAxis.set(0, 0, 1);
                 this.position.addScaledVector(_tempAxis, this.jointValue[2]);
 
                 this.jointValue[3] = values[3] !== null ? values[3] : this.jointValue[3];
@@ -290,9 +290,9 @@ class URDFJoint extends URDFBase {
                 // Respect existing RPY when modifying the position of the X,Y axes
                 this.position.copy(this.origPosition);
 
-                _tempAxis.set(1, 0, 0).applyEuler(this.rotation);
+                _tempAxis.set(1, 0, 0);
                 this.position.addScaledVector(_tempAxis, this.jointValue[0]);
-                _tempAxis.set(0, 1, 0).applyEuler(this.rotation);
+                _tempAxis.set(0, 1, 0);
                 this.position.addScaledVector(_tempAxis, this.jointValue[1]);
                 this.quaternion
                     .setFromAxisAngle(this.axis, this.jointValue[2])
