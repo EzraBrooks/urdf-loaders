@@ -2,11 +2,11 @@ import { Euler, Object3D, Vector3,Quaternion, Matrix4 } from 'three';
 
 const _tempAxis = new Vector3();
 const _tempEuler = new Euler();
-const _tempTransform = new Matrix4()
-const _tempOrigTransform = new Matrix4()
-const _tempQuat = new Quaternion()
-const _tempScale = new Vector3(1.0, 1.0, 1.0)
-const _tempPosition = new Vector3()
+const _tempTransform = new Matrix4();
+const _tempOrigTransform = new Matrix4();
+const _tempQuat = new Quaternion();
+const _tempScale = new Vector3(1.0, 1.0, 1.0);
+const _tempPosition = new Vector3();
 
 class URDFBase extends Object3D {
 
