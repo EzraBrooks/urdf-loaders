@@ -271,7 +271,7 @@ class URDFJoint extends URDFBase {
                     this.jointValue[5],
                     'XYZ',
                   ),
-                )
+                );
                 _tempPosition.set(this.jointValue[0], this.jointValue[1], this.jointValue[2]);
                 _tempTransform.compose(_tempPosition, _tempQuat, _tempScale);
 
