@@ -156,6 +156,7 @@ class URDFJoint extends URDFBase {
 
     /* Public Functions */
     /**
+     * Set the value or values of this joint
      * @param {...number|null} values The joint value components to set, optionally null for no-op
      * @returns {boolean} Whether the invocation of this function resulted in an actual change to the joint value
      */
